@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+	<title>Ejercicio 62 </title>
+	<script src="script.js">
+function areaTriangulo() {
+	
+	let areaTriangulo=0;
+	let altura = parseFloat(document.getElementById("altura").value);
+	let base = parseFloat(document.getElementById("base").value);
+
+	areaTriangulo= (base*altura)/2;
+	
+	parrafo.innerHTML = 'El area del triangulo es :'+areaTriangulo;
+			  
+}
+</script>
+	<style type="text/css">
+body{
+	font-family:Comic Sans MS;
+}
+p{
+	color:blue;
+}
+</style>
+
+
+</head>
+
+<body>
+	<h1>Area del triangulo</h1>
+	
+	<label for="altura">Altura: </label>
+	<input type="number"  id="altura" name="numero" autocomplete="off"></br>
+	
+	<label for="base">Base :  </label>
+	<input type="number"  id="base" name="numero" autocomplete="off" ></br></br>
+	<button onclick="areaTriangulo()">Calcular</button>
+	
+	<p id="parrafo"></p>
+
+</body>
+
+</html>
